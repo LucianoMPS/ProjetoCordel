@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/*definição das fontes e palletas*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --cor1: black;
+    --cor2: white;
+    --cor3: brown; 
+
+    --destaque: 'Passion One', sans-serif;
+    --texto: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* */
+
+
+/*cabeçalho do site*/
+header{
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header > h1{
+    font-family: var(--destaque);
+    font-variant: small-caps;
+    font-size: 10vw;
+    margin-top: 10px;
+}
+
+header a{
+    margin-bottom: 10px;
+    font-family: var(--destaque);
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    font-weight: bold;
+    color: var(--cor3);
+}
+/* */
+
+
+/*conteudo do site*/
+main{
+    font-family: var(--texto);
+}
+
+section{
+    padding-top: 5vh;    
+    padding-bottom: 5vh;
+    padding-left: 30px;
+    font-size: 3vw;
+    line-height: 2em;
+    text-align: left;
+}
+
+section p{
+    white-space: pre-line;
+}
+
+section.estrofe-normal{
+    background-color: white;
+    color: var(--cor1);
+}
+
+section.estrofe-destaque{
+    box-shadow: inset 2px 2px 13px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-attachment: fixed;
+    color: var(--cor2);
+}
+
+section.estrofe-destaque > p{
+    display: inline-block;
+    padding: 5px;
+    margin: auto;
+    text-shadow: 2px 2px 0px black;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+section#img1{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url("../imagens/background002.jpg");
+    background-position: center center;
+}
+/* */
+
+
+/*rodape do site*/
+footer{
+    padding: 10px;
+    text-align: center;
+    color: var(--cor2);;
+    background-color: black;
+}
+
+footer > a{
+    font-family: var(--destaque);
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer > a:hover{
+    color: var(--cor3);
+}
